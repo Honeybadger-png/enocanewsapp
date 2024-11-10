@@ -1,0 +1,10 @@
+.nav-border{
+  border-style: groove;
+  border-width: 1px 0px;
+  border-color: #2f2f2f;
+}
+
+ul > li:hover{
+  color: red!important;
+  font-size: 20px;
+}
