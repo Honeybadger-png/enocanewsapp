@@ -20,4 +20,4 @@ Finally, the app can be run with -> npm run start or ng serve -o
 This project hasn't been finished yet.
 Hi It's me the developer.
 I have had little experience with Angular before In case of errors or any wrongdoing please be patient and wait for the update.
-If the repo is still here it means that the development process is ongoing.
+If the repo is still here the development process is ongoing.
