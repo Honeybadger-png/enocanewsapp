@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +14,8 @@ import { CategoriesComponent } from './categories/categories.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { HomeComponent } from './home/home.component';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { NewsListComponent } from './news/news-list/news-list.component';
 
 @NgModule({
   declarations: [
@@ -22,15 +27,11 @@ import { HomeComponent } from './home/home.component';
     CategoriesComponent,
     AboutUsComponent,
     SearchPageComponent,
-    HomeComponent
+    HomeComponent,
+    NewsListComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideClientHydration()
-  ],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [provideClientHydration(), provideHttpClient(withFetch())],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
