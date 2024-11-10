@@ -4,7 +4,7 @@ import { NewsComponent } from './news/news.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SearchPageComponent } from './search-page/search-page.component';
-import { HomeComponent } from './home/home.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
   // {
@@ -31,6 +31,10 @@ const routes: Routes = [
   {
     path: 'search-page',
     component: SearchPageComponent,
+  },
+  {
+    path: '**',
+    component: NotfoundComponent,
   },
 ];
 

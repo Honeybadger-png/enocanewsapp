@@ -16,6 +16,8 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { HomeComponent } from './home/home.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { NewsListComponent } from './news/news-list/news-list.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +31,10 @@ import { NewsListComponent } from './news/news-list/news-list.component';
     SearchPageComponent,
     HomeComponent,
     NewsListComponent,
+    NotfoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [provideClientHydration(), provideHttpClient(withFetch())],
+  providers: [provideClientHydration(), provideHttpClient(withFetch()), provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

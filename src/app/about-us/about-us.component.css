@@ -4,9 +4,10 @@
   justify-content: center;
   position: relative;
   flex: auto;
-  height: 40vh;
+  height: 30vh;
   text-align: center;
-  margin-top: 2vh;
+  margin: 1vh;
+  border: 2px double
 }
 
 .personal-card{
@@ -15,14 +16,14 @@
 }
 
 .personal-image-card{
-  margin-left: 1vh;
+  border-right: 2px double;
   width: 100%;
   height: 100%;
 }
 
 .personal-image-card img{
-  padding: 1vh;
-  width: 75%;
+  padding: 2vh;
+  width: 60%;
   height: 100%;
   border-radius: 50%;
   object-fit:  fill;
@@ -31,7 +32,6 @@
 .information-card{
   padding-top: 1vh;
   padding-left: 8vh;
-  margin-left: 2vh ;
   text-align: start;
   justify-items: end;
   display: flex;
@@ -54,4 +54,44 @@
 h4{
   margin-right: 1vh;
   display: inline;
+}
+
+.bottom-personal-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  flex: auto;
+  height: 100vh;
+  text-align: center;
+  margin: 1vh;
+  border: 2px double;
+}
+
+.left-bottom{
+  padding-top: 5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  width: 30%;
+  height: 100%;
+  border-right: 2px double;
+  text-align: start;
+}
+
+.personal-title{
+  width: 100%;
+  border-bottom: 1px solid;
+
+}
+.personal-list{
+  padding-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+.right-bottom{
+  padding-top: 5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  width: 70%;
+  text-align: start;
 }
