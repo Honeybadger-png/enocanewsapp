@@ -11,6 +11,7 @@
 }
 
 .image-card{
+  cursor: pointer;
   width: 40%;
   background-color: white;
 
@@ -30,7 +31,7 @@
 
 .content-card p {
   font-size: x-large;
-  font-weight: bolder;
+  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -48,3 +49,4 @@
 .content-card .author:hover{
   color: aqua;
 }
+

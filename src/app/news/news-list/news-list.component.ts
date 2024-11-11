@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Article } from '../news';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-news-list',
@@ -8,4 +9,10 @@ import { Article } from '../news';
 })
 export class NewsListComponent {
   @Input() singleNews!: Article;
+  @Input() indexOfNews!: number;
+  constructor(private router: Router) {}
+
+  onClick() {
+    this.router.navigate([`/news`, this.indexOfNews]);
+  }
 }

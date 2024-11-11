@@ -1,11 +1,12 @@
-<div class="news-card">
+<div class="news-card" >
   <div class="row">
-    <div class="image-card">
+    <div class="image-card" (click)="onClick()">
       <img src='{{singleNews.urlToImage}}' alt="">
     </div>
     <div class="content-card">
-      <p>title</p>
-      <a href="{{singleNews.url}}">{{singleNews.author}}</a>
+      <p>{{singleNews.title}}</p>
+      <p>{{singleNews.publishedAt}}</p>
+      <a href="{{singleNews.url}}" >{{singleNews.source.name}}</a>
     </div>
   </div>
 </div>

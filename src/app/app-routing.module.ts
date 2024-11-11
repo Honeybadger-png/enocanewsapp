@@ -5,6 +5,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { NewsDetailComponent } from './news/news-detail/news-detail.component';
 
 const routes: Routes = [
   // {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'news',
     component: NewsComponent,
+  },
+  {
+    path: 'news/:id',
+    component: NewsDetailComponent,
   },
   {
     path: 'categories',

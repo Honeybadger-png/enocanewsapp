@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Article, News } from './news';
 import { NewsService } from './services/news.service';
 
@@ -16,8 +16,12 @@ export class NewsComponent implements OnInit {
 
   ngOnInit(): void {
     this.newsService.getNews().subscribe((news: News) => {
-      this.data = news.articles;
-      this.pageNumber = Math.ceil(news.totalResults / 20);
+      news.articles.map((article) => {
+        if (article.title !== '[Removed]') {
+          this.data.push(article);
+        }
+      });
+      this.pageNumber = Math.ceil(this.data.length / 20);
     });
     console.log(this.data);
   }

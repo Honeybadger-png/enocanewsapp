@@ -18,6 +18,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { NewsListComponent } from './news/news-list/news-list.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { NewsDetailComponent } from './news/news-detail/news-detail.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     HomeComponent,
     NewsListComponent,
     NotfoundComponent,
+    NewsDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration(), provideHttpClient(withFetch()), provideAnimationsAsync()],
