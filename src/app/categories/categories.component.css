@@ -1,0 +1,24 @@
+.filter-page{
+  padding: 1vh;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid black;
+}
+
+
+.filter-box{
+  margin-right: 2vh;
+  padding: 2vh;
+  border-radius: 5%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+}
+
+.news-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
